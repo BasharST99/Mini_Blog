@@ -6,7 +6,7 @@ export default async function Home({
 }: {
   params: Promise<{ locale: "en" | "ar" }>;
 }) {
-  const { locale } = await params;           // ✅ await params
+  const { locale } = await params;
   return (
     <main>
       <Container>

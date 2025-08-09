@@ -1,16 +1,14 @@
 import Container from "@/components/layout/Container";
 import PostView from "@/components/posts/PostView";
 
-type P = { locale: "en" | "ar"; id: string };
-const getParams = (p: P | Promise<P>) => Promise.resolve(p);
+type PageParams = { locale: "en" | "ar"; id: string };
 
 export default async function PostPage({
   params,
 }: {
-  params: P | Promise<P>;
+  params: Promise<PageParams>;
 }) {
-  const { locale, id } = await getParams(params);
-
+  const { locale, id } = await params; 
   return (
     <main>
       <Container>

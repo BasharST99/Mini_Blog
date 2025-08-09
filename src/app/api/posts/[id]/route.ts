@@ -1,6 +1,5 @@
 import { NextResponse, type NextRequest } from "next/server";
-import { posts } from "@/mocks/posts"; // adjust path if your mocks live elsewhere
-
+import { posts } from "@/mocks/posts";
 type Params = { id: string };
 
 export async function GET(

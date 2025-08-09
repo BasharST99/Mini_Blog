@@ -6,7 +6,6 @@ type Ctx = { mode: Mode; toggle: () => void; setMode: (m: Mode) => void };
 
 const ColorModeContext = createContext<Ctx | null>(null);
 
-// decide initial mode without flashing
 function getInitialMode(): Mode {
   try {
     const saved = localStorage.getItem("theme") as Mode | null;
@@ -19,18 +18,15 @@ function getInitialMode(): Mode {
 }
 
 export function ColorModeProvider({ children }: { children: React.ReactNode }) {
-  const [mode, setModeState] = useState<Mode>(() => "light"); // render light on SSR, update after mount
+  const [mode, setModeState] = useState<Mode>(() => "light"); 
 
-  // apply to DOM after mount (avoids SSR/CSR mismatch)
   useEffect(() => {
     const m = getInitialMode();
     setModeState(m);
   }, []);
 
   useEffect(() => {
-    // Tailwind + native form controls
     document.documentElement.classList.toggle("dark", mode === "dark");
-    // allow UA to style built-in elements properly
     document.documentElement.style.colorScheme = mode;
     try { localStorage.setItem("theme", mode); } catch {}
   }, [mode]);

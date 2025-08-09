@@ -1,36 +1,46 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Mini Blog
 
-## Getting Started
+A multilingual (LTR/RTL) blog built with **Next.js 15**, **TypeScript**, **MUI**, **TailwindCSS**, and **React Query**.  
+Supports **dark/light mode**, language switching, and mock API endpoints for development.
 
-First, run the development server:
+---
+
+## 🚀 Features
+- **Multi-language** support (English / Arabic) with LTR & RTL layout.
+- **Dark / Light mode** with persistent preference.
+- **Material UI + TailwindCSS** for flexible styling.
+- **React Query** for data fetching and caching.
+- Mock posts API for local development.
+
+---
+
+## 📦 Installation
+
+Clone the repository:
+```bash
+git clone https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+cd YOUR-REPO-NAME
+```
+Install dependencies:
+```bash
+npm install
+```
+
+## 🏃‍♂️ Running the App
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
+Open your browser and navigate to [http://localhost:3000](http://localhost:3000).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🌐 Language Switching
+- The app supports both English and Arabic.
+- You can switch languages by changing the URL path (e.g., `/en` for English, `/ar` for Arabic).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🌗 Dark/Light Mode
+- The app supports dark and light mode.
+- You can toggle between modes using the button in the top right corner.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🧪 Mock API
+- The app uses a mock API for posts.
+- The API is set up to return a list of posts in both languages.

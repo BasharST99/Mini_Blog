@@ -32,5 +32,29 @@ export const posts: Post[] = [
     title_ar: "أنظمة التصميم باستخدام MUI و Tailwind",
     content_en: "How to combine utility-first CSS with a component library.",
     content_ar: "كيفية الجمع بين CSS المعتمدة على الأدوات ومكتبة المكونات."
-  }
+  },
+  {
+    id: 5,
+    author: "Layla",
+    title_en: "Building Accessible UIs",
+    title_ar: "بناء واجهات مستخدم قابلة للوصول",
+    content_en: "Best practices for creating inclusive and accessible user interfaces.",
+    content_ar: "أفضل الممارسات لإنشاء واجهات مستخدم شاملة وقابلة للوصول."
+  },
+  {
+    id: 6,
+    author: "Zara",
+    title_en: "Exploring the JAMstack",
+    title_ar: "استكشاف JAMstack",
+    content_en: "Understanding the benefits and challenges of the JAMstack architecture.",
+    content_ar: "فهم فوائد وتحديات بنية JAMstack."
+  },
+  {
+    id: 7,
+    author: "Liam",
+    title_en: "Introduction to TypeScript",
+    title_ar: "مقدمة في TypeScript",
+    content_en: "A comprehensive guide to getting started with TypeScript.",
+    content_ar: "دليل شامل للبدء في TypeScript."
+  },
 ];
